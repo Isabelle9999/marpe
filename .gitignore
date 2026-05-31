@@ -1,0 +1,30 @@
+# Large activation files (regenerable from gen.py + split_acts.py)
+artifacts/probes/acts.pt
+artifacts/probes/acts_layer_*.pt
+artifacts/probes/tokens.pt
+artifacts/probes/masks.pt
+artifacts/probes/labels.pt
+artifacts/probes/labels_gemini.pt
+artifacts/probes/text_pairs.json
+artifacts/probes/elicitation.json
+
+# Third-party repos (cloned, not part of MARPE)
+deception-detection/
+obfuscation-atlas/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment / credentials
+.env
+*.key
+
+# Editor / OS / Claude Code internals
+.vscode/
+.DS_Store
+.venv/
+.claude/
+CLAUDE.md
+CLAUDE.md

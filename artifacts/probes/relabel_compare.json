@@ -1,0 +1,13 @@
+{
+  "n_total": 287,
+  "drop_count": 3,
+  "kept_count": 284,
+  "flip_count": 114,
+  "agreement_rate": 0.5986,
+  "verdict_counts": {
+    "conceals": 100,
+    "discloses-honestly": 184,
+    "refuses": 1,
+    "unclear": 2
+  }
+}

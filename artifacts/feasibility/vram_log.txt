@@ -1,0 +1,6 @@
+load_peak_gb 13.1604
+gen_peak_gb 13.1717
+bwd_peak_gb 14.6499
+deviation model: Llama-3.2-3B-Instruct in BF16 (fallback from Meta-Llama-3-8B-Instruct 8-bit x 2, which OOMed during gradient forward on 16GB; documented Phase 0 fail action per CLAUDE.md)
+deviation rollout config: batch 1 x seq 256 per-step (matches Obfuscation Atlas max_new_tokens=256; effective batch 8 will be recovered via gradient_accumulation_steps=8 in Phase 3 per standard consumer-hardware GRPO practice)
+deviation attn_implementation: sdpa (flash_attn unavailable; deviation from Obfuscation Atlas flash_attention_2 default)
